@@ -1,4 +1,5 @@
 import './App.css';
+import Skills from './Skills';
 
 function App() {
   return (
@@ -35,26 +36,7 @@ function App() {
         </div>
         <div class="row">
             <aside class="col-md-4">
-                <section class="card skills" data-ng-controller="skillsCtrl">
-                    <div class="card-body">
-                        <h3 class="skills__title card-title">Skills</h3>
-                        <div class="skills__list d-grid gap-3">
-                            <div class="skill row" data-ng-repeat="skill in skills">
-                                <label class="col-5 skill__name" for="skill-{{ skill.name }}"
-                                    data-ng-bind="skill.name"></label>
-                                <div class="col-7">
-                                    <div class="progress" title="{{ skill.value }} / 100">
-                                        <div id="skill-{{ skill.name }}" aria-label="{{ skill.name }} skill"
-                                            class="progress-bar" role="progressbar"
-                                            data-ng-style="{'width': '{{skill.value}}%'}"
-                                            aria-valuenow="{{ skill.value }}">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <Skills />
                 <section class="card experience" data-ng-controller="experienceCtrl">
                     <div class="card-body">
                         <h3 class="card-title experience__title">Experiences</h3>
@@ -124,7 +106,6 @@ function App() {
                 </section>
             </div>
         </div>
-
 
         <footer class="mt-4">
             <p>Developed by <b>mohitkh7</b></p>
