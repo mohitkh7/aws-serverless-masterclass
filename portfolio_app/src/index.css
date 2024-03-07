@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   background-color: var(--gray3);
   font-family: Montserrat, poppins, sans-serif;
