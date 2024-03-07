@@ -159,8 +159,8 @@ body {
 }
 
 .job__title {
-  margin-top: .75rem;
-  margin-bottom: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
   font-weight: 600;
   color: var(--black1);
 }
@@ -168,6 +168,37 @@ body {
 .job__description {
   color: var(--gray2);
 }
+
+/* || Testimonials */
+
+.testimonial::before {
+  content: "\201C";
+  font-family: Arial,sans-serif;
+  color: var(--blue1);
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 54px;
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.testimonial {
+  padding-right: 2rem;
+  padding-left: 60px;
+  position: relative;
+}
+
+.testimonial__content {
+  text-align: justify;
+  text-transform: monospace;
+}
+
+.testimonial__overview b {
+  text-transform: uppercase;
+  color: var(--blue1);
+}
+
 
 /* buttons */
 .btn {

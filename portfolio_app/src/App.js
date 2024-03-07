@@ -4,6 +4,7 @@ import Social from './social';
 import Profile from './Profile';
 import Experience from './Experience';
 import Projects from './Projects';
+import Testimonials from './Testimonials';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </aside>
         <div className="col-md-8">
           <Projects />
+          <Testimonials />
         </div>
       </div>
 

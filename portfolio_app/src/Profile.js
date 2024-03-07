@@ -6,7 +6,7 @@ const Profile = () => {
     <div className="card-body">
       <div className="row">
         <div className="col-lg-2 col-md-3 text-center">
-          <img className="img img-fluid profile__img" src="./mohit_profile_image.jpg" alt="Mohit Khandelwal profile" />
+          <img className="img img-fluid profile__img" src="./profile_image.jpg" alt="Mohit Khandelwal profile" />
         </div>
         <div className="col-lg-10 col-md-9">
           <div className="profile__head">
@@ -25,8 +25,8 @@ const Profile = () => {
             </address>
           </div>
           <main className="profile__description">
-            Mohit is a self learned full stack developer. He specializes in Python and Javascript and
-            thrives to make websites that users love. He is always eager to learn, share and expand
+            Mohit is a self learned full stack developer. He specializes in Python, Javascript & AWS Cloud
+            and thrives to make websites that users love. He is always eager to learn, share and expand
             knowledge.
           </main>
         </div>
