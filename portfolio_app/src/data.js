@@ -1,8 +1,21 @@
+import {FaLinkedin, FaTwitter, FaGithub, FaYoutube, FaMedium} from 'react-icons/fa';
+import { SiLeetcode } from "react-icons/si";
+
+
 const skills = [
   { "name": "Python", "value": 90 },
   { "name": "Javascript", "value": 60 },
   { "name": "AWS", "value": 80 },
   { "name": "HTML/CSS", "value": 70 }
+]
+
+const socials = [
+  { "name": "Linkedin", "url": "https://www.linkedin.com/in/mohitkh7/", "icon": <FaLinkedin />},
+  { "name": "Twitter", "url": "https://twitter.com/mohitkh7", "icon": <FaTwitter />},
+  { "name": "Github", "url": "https://github.com/mohitkh7", "icon": <FaGithub />},
+  { "name": "Youtube", "url": "https://www.youtube.com/channel/UC9jyRGgAD-wZVomxIwQ-6Zw", "icon": <FaYoutube />},
+  { "name": "Leetcode", "url": "https://leetcode.com/mohitkh7", "icon": <SiLeetcode />},
+  { "name": "Medium", "url": "https://medium.com/@mohitkh7", "icon": <FaMedium />}
 ]
 
 const jobs = [
@@ -141,4 +154,4 @@ const projects = [
   }
 ]
 
-export { skills, jobs, projects };
+export { skills, jobs, projects, socials };

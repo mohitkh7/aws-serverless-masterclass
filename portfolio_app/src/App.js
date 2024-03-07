@@ -1,5 +1,6 @@
 import './App.css';
 import Skills from './Skills';
+import Social from './social';
 import Profile from './Profile';
 import Experience from './Experience';
 import Projects from './Projects';
@@ -10,6 +11,7 @@ function App() {
       <Profile />
       <div className="row">
         <aside className="col-md-4">
+          <Social />
           <Skills />
           <Experience />
         </aside>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {skills} from './data';
+import { skills } from './data';
 
 const Skills = () => {
   return <section className="card skills">
@@ -12,7 +12,7 @@ const Skills = () => {
             <div className="col-7">
               <div className="progress" title={skill.value + "%"}>
                 <div className="progress-bar" role="progressbar"
-                  style={{"width": skill.value + '%'}}>
+                  style={{ "width": skill.value + '%' }}>
                 </div>
               </div>
             </div>
