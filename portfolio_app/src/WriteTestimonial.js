@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaPen } from "react-icons/fa";
 
-const API_URL = "https://fc72s36hl3.execute-api.ap-south-1.amazonaws.com/dev/recommendations";
+// const API_URL = "<<<<<INSERT HERE>>>>>";
 
 const WriteTestimonial = () => {
   const [showForm, setShowForm] = useState(false);
@@ -26,9 +26,10 @@ const WriteTestimonial = () => {
       const response = await fetch(API_URL, {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
-        body: inputs
+        body: JSON.stringify(inputs)
       })
-      console.log(response.json());
+      const data = await response.json();
+      console.log(data);
     } catch (error) {
       console.error(error);
     }
@@ -39,19 +40,19 @@ const WriteTestimonial = () => {
       <button className="btn btn--border" onClick={() => setShowForm(!showForm)}><FaPen /> Write Testimonial</button>
     </div>
     <form style={{ display: showForm ? 'block' : 'none' }} onSubmit={handleSubmit}>
-      <div class="row mt-4">
-        <div class="col-6">
-          <input type="text" class="form-control" name="name" placeholder="Name" onChange={handleChange} />
+      <div className="row mt-4">
+        <div className="col-6">
+          <input type="text" className="form-control" minLength="2" name="name" placeholder="Name" onChange={handleChange} />
         </div>
-        <div class="col-6">
-          <input type="text" class="form-control" name="designation" placeholder="Designation" onChange={handleChange} />
+        <div className="col-6">
+          <input type="text" className="form-control" minLength="5" name="designation" placeholder="Designation" onChange={handleChange} />
         </div>
-        <div class="col mt-2">
-          <input type="text" class="form-control" name="content" placeholder="Content" onChange={handleChange} />
+        <div className="col mt-2">
+          <input type="text" className="form-control" minLength="5"name="feedback" placeholder="Share your thoughts..." onChange={handleChange} />
         </div>
       </div>
-      <button type="submit" class="btn btn-primary mt-2 mx-2">Submit</button>
-      <button type="button" class="btn btn--border mt-2 mx-2" onClick={() => setShowForm(false)}>Close</button>
+      <button type="submit" className="btn btn-primary mt-2 mx-2">Submit</button>
+      <button type="button" className="btn btn--border mt-2 mx-2" onClick={() => setShowForm(false)}>Close</button>
     </form>
   </>
 }

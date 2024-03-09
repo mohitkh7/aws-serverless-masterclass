@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import WriteTestimonial from "./WriteTestimonial";
 
-const API_URL = "https://fc72s36hl3.execute-api.ap-south-1.amazonaws.com/dev/recommendations";
+// const API_URL = "<<<<<INSERT HERE>>>>>";
 
 const DynamicTestimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
@@ -26,7 +26,7 @@ const DynamicTestimonials = () => {
       <h3 className="card-title">Testimonials</h3>
       <div className="d-grid gap-3">
         {testimonials.map((testimonial) => {
-          return <div className="testimonial" key={testimonial.name}>
+          return <div className="testimonial" key={testimonial.id}>
             <p className="testimonial__content">{testimonial.feedback}</p>
             <p className="testimonial__overview"><b>{testimonial.name}</b>, {testimonial.designation}</p>
           </div>

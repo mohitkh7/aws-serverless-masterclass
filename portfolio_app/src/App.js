@@ -19,7 +19,6 @@ function App() {
         </aside>
         <div className="col-md-8">
           <Projects />
-          <DynamicTestimonials />
         </div>
       </div>
 
