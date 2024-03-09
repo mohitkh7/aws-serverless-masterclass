@@ -18,16 +18,16 @@ const socials = [
   { "name": "Medium", "url": "https://medium.com/@mohitkh7", "icon": <FaMedium />}
 ]
 
-const testimonials = [
+const staticTestimonials = [
   {
     "name": "Pranov Mohanraj",
     "designation": "Vice President at Goldman Sachs",
-    "content": "Mohit is an asset to any team. He excels at architecting and developing modules that are efficient and strategic. His quest to equip himself technically and mentor juniors in the team is commendable."
+    "feedback": "Mohit is an asset to any team. He excels at architecting and developing modules that are efficient and strategic. His quest to equip himself technically and mentor juniors in the team is commendable."
   },
   {
     "name": "Krishna Devan Alikkal Mohandas",
     "designation": "Group Project Manager at Infosys",
-    "content": "Mohit is highly professional, disciplined at work, responsible, knowledgeable with good logical skills. He is quick in resolving problems, high quality delivery, soft spoken and very sharp in decision making."
+    "feedback": "Mohit is highly professional, disciplined at work, responsible, knowledgeable with good logical skills. He is quick in resolving problems, high quality delivery, soft spoken and very sharp in decision making."
   }
 
 ]
@@ -175,4 +175,4 @@ const projects = [
   }
 ]
 
-export { skills, jobs, projects, socials, testimonials };
+export { skills, jobs, projects, socials, staticTestimonials };
