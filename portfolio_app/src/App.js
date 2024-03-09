@@ -5,6 +5,7 @@ import Profile from './Profile';
 import Experience from './Experience';
 import Projects from './Projects';
 import StaticTestimonials from './StaticTestimonials';
+import DynamicTestimonials from './DynamicTestimonials';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         </aside>
         <div className="col-md-8">
           <Projects />
-          <StaticTestimonials />
+          <DynamicTestimonials />
         </div>
       </div>
 

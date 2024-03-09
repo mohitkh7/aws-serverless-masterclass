@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { WriteTestimonial } from "./WriteTestimonial";
+import WriteTestimonial from "./WriteTestimonial";
 
 const API_URL = "https://fc72s36hl3.execute-api.ap-south-1.amazonaws.com/dev/recommendations";
 
-const Testimonials = () => {
+const DynamicTestimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
 
   const fetchTestimonials = async () => {
@@ -37,4 +37,4 @@ const Testimonials = () => {
   </section>
 }
 
-export default Testimonials;
+export default DynamicTestimonials;
